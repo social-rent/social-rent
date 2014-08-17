@@ -1,0 +1,35 @@
+<h1>Listing contracts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Landlord</th>
+      <th>Tenant</th>
+      <th>Payment due date</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Credit union</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contracts.each do |contract| %>
+      <tr>
+        <td><%= contract.landlord.name %></td>
+        <td><%= contract.tenant.telephone %></td>
+        <td><%= contract.payment_due_date %></td>
+        <td><%= contract.start_date %></td>
+        <td><%= contract.end_date %></td>
+        <td><%= contract.credit_union %></td>
+        <td><%= link_to 'Show', contract %></td>
+        <td><%= link_to 'Edit', edit_contract_path(contract) %></td>
+        <td><%= link_to 'Destroy', contract, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contract', new_contract_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  landlord_id_id: 
+  tenant_id_id: 
+  payment_due_date: 2014-08-16
+  start_date: 2014-08-16
+  end_date: 2014-08-16
+  credit_union: 1
+
+two:
+  landlord_id_id: 
+  tenant_id_id: 
+  payment_due_date: 2014-08-16
+  start_date: 2014-08-16
+  end_date: 2014-08-16
+  credit_union: 1

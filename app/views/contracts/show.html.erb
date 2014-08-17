@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Landlord:</strong>
+  <%= @contract.landlord.name %>
+</p>
+
+<p>
+  <strong>Tenant:</strong>
+  <%= @contract.tenant.telephone %>
+</p>
+
+<p>
+  <strong>Payment due date:</strong>
+  <%= @contract.payment_due_date %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @contract.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @contract.end_date %>
+</p>
+
+<p>
+  <strong>Credit union:</strong>
+  <%= @contract.credit_union %>
+</p>
+
+<%= link_to 'Edit', edit_contract_path(@contract) %> |
+<%= link_to 'Back', contracts_path %>
